@@ -1,5 +1,4 @@
 ﻿using StatePattern.Entity.Interfaces;
-using StatePattern.Entity.States;
 
 namespace StatePattern.Entity {
     internal class Person {
