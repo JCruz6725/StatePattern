@@ -12,7 +12,7 @@ namespace StatePattern.Entity {
  
         public void Set_State(IState transitionState) {
             if(!CurrentState.CanTransition(transitionState)) {
-                throw new Exception("transition not possible");
+                throw new Exception($"Transition {CurrentState.GetType().ToString()} -> {transitionState.GetType().ToString()} is not possible");
             }
             CurrentState = transitionState;
         }
