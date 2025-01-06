@@ -2,8 +2,8 @@
 
 namespace StatePattern.Entity {
     internal class Person {
-        public Person(IState initailState ) {
-            CurrentState = initailState;
+        public Person(IState initialState ) {
+            CurrentState = initialState;
         }
 
         private IState CurrentState { get; set; }
