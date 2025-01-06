@@ -7,7 +7,6 @@ namespace StatePattern.Entity {
             CurrentState = initailState;
         }
 
-
         private IState CurrentState { get; set; }
  
         public void Set_State(IState transitionState) {
@@ -26,7 +25,5 @@ namespace StatePattern.Entity {
             Execute();
         
         }
-
-
     }
 }
